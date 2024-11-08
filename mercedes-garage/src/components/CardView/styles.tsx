@@ -19,5 +19,17 @@ export const styles = StyleSheet.create({
         flex: 1,
         width: '65%',
         resizeMode: 'contain'
+    },
+    carBrand: {
+        color: "#FFF",
+        fontWeight: '400',
+        fontStyle: 'italic'
+    },
+    carName: {
+        color: "#FFF",
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center'
     }
 });
+

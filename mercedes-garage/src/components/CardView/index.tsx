@@ -13,12 +13,22 @@ export default function CardView() {
             <Image style={styles.imageLogo} source={Logo} />
         </View> 
     )
+    
+    const renderCarDetails = () => (
+        <View style={{alignItems: 'center'}}>
+            <Text style={styles.carBrand}>Mercedes Benz</Text>
+            <Text style={styles.carName}>Model-Car</Text>
+        </View>
+    )
         
     
     return (
         <View style={styles.imageContainer}>
           {renderLogoBox()}
+
           <Divider />
+
+          {renderCarDetails()}
         </View>
     )
 }
