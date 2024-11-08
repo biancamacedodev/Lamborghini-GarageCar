@@ -5,6 +5,7 @@ import Logo from '../../../assets/mercedesLogoTransparent.png';
 
 import { styles } from "./styles";
 import { Divider } from "../Divider";
+import { CAR_ASSETS_BASE_URL } from "../../constantes/car";
 
 export default function CardView() {
 
@@ -21,14 +22,25 @@ export default function CardView() {
         </View>
     )
         
-    
+    const renderCarImage = () => (
+        <Image 
+            style={styles.imageCar}
+            source={{
+               uri: `${CAR_ASSETS_BASE_URL}1.png`
+             }}
+        />
+    )
+
     return (
         <View style={styles.imageContainer}>
-          {renderLogoBox()}
+            {renderLogoBox()}
 
-          <Divider />
+            <Divider />
 
-          {renderCarDetails()}
+            {renderCarDetails()}
+            {renderCarImage()}
+
+            <Divider />
         </View>
     )
 }

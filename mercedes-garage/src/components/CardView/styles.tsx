@@ -21,15 +21,22 @@ export const styles = StyleSheet.create({
         resizeMode: 'contain'
     },
     carBrand: {
-        color: "#FFF",
-        fontWeight: '400',
-        fontStyle: 'italic'
+        color: "#fff",
+        fontWeight: "400",
+        fontSize: 18,
+        fontStyle: "italic",
     },
     carName: {
         color: "#FFF",
         fontSize: 20,
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        marginBottom: 20,
+    },
+    imageCar: {
+        marginBottom: 20,
+        width: '100%',
+        height: 100,
     }
 });
 
